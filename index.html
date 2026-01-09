@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kei Seed Secondary School | Modelling Excellence</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo">
+            i
+            <h2>KEI SEED SS</h2>
+            <small>Modelling Excellence</small>
+        </div>
+
+        <nav id="nav">
+
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#academics">Academics</a>
+            <a href="#facilities">Facilities</a>
+            <a href="#activities">Activities</a>
+            <a href="#fees">Fees</a>
+            <a href="#success">Success</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="menu" onclick="toggleMenu()">☰</div>
+    </header>
+
+    <!-- HERO / SLIDER -->
+    <section id="home" class="hero">
+        <div class="slide active">
+            <img src="kei/image1.jpeg.png" alt="">
+            <div class="caption">A Safe & Supportive Learning Environment</div>
+        </div>
+        <div class="slide">
+            <img src="kei/image2.jpeg.png" alt="">
+            <div class="caption">Quality Education for Future Leaders</div>
+        </div>
+        <div class="slide">
+            <img src="kei/image3.jpeg.png" alt="">
+            <div class="caption">Discipline, Knowledge & Excellence</div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section split">
+        <div>
+            <h2>About Kei Seed Secondary School</h2>
+            <p>
+                Kei Seed Secondary School is a modern secondary school located in Yumbe District. Guided by our motto <strong>“Modelling Excellence”</strong>, we nurture disciplined, confident and academically strong learners.
+            </p>
+        </div>
+        <img src="kei/image4.jpeg.png" alt="">
+    </section>
+
+    <!-- ACADEMICS -->
+    <section id="academics" class="section bg">
+        <h2>Academic Programs</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="kei/image21.jpeg.png" alt="">
+                <h3>O-Level Curriculum</h3>
+                <p>UNEB-aligned subjects with strong academic support.</p>
+            </div>
+            <div class="card">
+                <img src="kei/image6.jpeg.png" alt="">
+                <h3>Library Studies</h3>
+                <p>Quiet study spaces with academic materials.</p>
+            </div>
+            <div class="card">
+                <img src="kei/image7.jpeg.png" alt="">
+                <h3>Practical Learning</h3>
+                <p>Hands-on learning and continuous assessment.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FACILITIES -->
+    <section id="facilities" class="section">
+        <h2>School Facilities</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="kei/image8.jpeg.png" alt="">
+                <h3>Science Laboratory</h3>
+                <p>Physics, Chemistry & Biology labs.</p>
+            </div>
+            <div class="card">
+                <img src="kei/image9.jpeg.png" alt="">
+                <h3>School Library</h3>
+                <p>Reference and revision materials.</p>
+            </div>
+            <div class="card">
+                <img src="kei/image10.jpeg.png" alt="">
+                <h3>ICT Lab</h3>
+                <p>Computer studies & digital skills.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ACTIVITIES -->
+    <section id="activities" class="section bg">
+        <h2>Student Life & Activities</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="kei/image11.jpeg.png" alt="">
+                <h3>Music, Dance & Drama</h3>
+                <p>Talent development & creativity.</p>
+            </div>
+            <div class="card">
+                <img src="kei/image12.jpeg.png" alt="">
+                <h3>Sports & Games</h3>
+                <p>Football, athletics & teamwork.</p>
+            </div>
+            <div class="card">
+                <img src="kei/image15.jpeg.png" alt="">
+                <h3>Educational Tours</h3>
+                <p>Learning beyond the classroom.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEES -->
+    <section id="fees" class="section">
+        <h2>Fees Structure</h2>
+        <p>
+            School fees depend on class and boarding status. Please contact the school for the official fees structure.
+        </p>
+        <button onclick="openChat()">Ask About Fees</button>
+    </section>
+
+    <!-- SUCCESS -->
+    <section id="success" class="section bg">
+        <h2>Success Stories</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="kei/image20.jpeg.png" alt="">
+                <h3>UNEB Excellence</h3>
+                <p>Consistent academic performance.</p>
+            </div>
+            <div class="card">
+                <img src="kei/image21.jpeg.png" alt="">
+                <h3>Leadership</h3>
+                <p>Strong student leadership.</p>
+            </div>
+            <div class="card">
+                <img src="kei/image22.jpeg.png" alt="">
+                <h3>Sports Achievements</h3>
+                <p>Inter-school competitions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+        <h2>Contact Us</h2>
+        <p><strong>KEI SEED SECONDARY SCHOOL</strong></p>
+        <p>P.O. Box 79, Yumbe</p>
+        <p>📞 +256 782 875 082 / +256 772 929 256</p>
+        <p>📧 keiseedsecondary2016@gmail.com</p>
+    </section>
+
+    <!-- CHAT -->
+    <div class="chat-btn" onclick="openChat()">💬</div>
+    <div class="chat-box" id="chatBox">
+        <div class="chat-header">
+            School Live Chat
+            <span onclick="closeChat()">✖</span>
+        </div>
+        <div class="chat-body" id="chatBody">
+            <p class="bot">Hello 👋 Ask about admissions or fees.</p>
+        </div>
+        <input id="userInput" placeholder="Type message..." onkeypress="sendMessage(event)">
+    </div>
+
+    <footer>
+        © 2026 Kei Seed Secondary School | Modelling Excellence
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
